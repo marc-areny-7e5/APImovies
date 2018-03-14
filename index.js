@@ -26,7 +26,7 @@ function getMovie(searchTerm){
 
 const batman = {
     Search: [
-        {imdbID: 'tt0096895', Title: 'Batman', Year: 1989, Poster: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_.jpg'}
+        {imdbID: 'tt0096895', Title: 'Batman', Year: '1989', Poster: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_.jpg'}
     ]
 }
 
