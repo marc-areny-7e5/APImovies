@@ -2,9 +2,75 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Fake Movie Database Api</title>
   </head>
   <body>
-    hello
+    <h1>Movie Database REST Api</h1>
+    <h3>Demo puproses only (21 movies exists)</h3>
+    <article>
+      <section>
+        This REST api is made to fullill Pluralsight's course 
+        <a target="_blank" href="https://app.pluralsight.com/library/courses/play-by-play-ios-swift-from-scratch/">Play by Play: iOS and Swift from Scratch</a>. 
+        The course relied on <a targer="_blank" href="http://omdbapi.com/">OMDb API</a>, but they are no longer an open api. They require you to sign up and pay for poster url's.
+      </section>
+        
+      <section>
+        My Api only contains some Batman and Star Wars movies. But are enough to finish the course, perfectly. 
+        You are welcome to use this REST api for whatever purpose you have. The response is sent as an JSON object
+      </section>
+
+      <section>
+        <h3>Usage</h3>
+        <p>Send requests to:</p>
+        <div class="info-block">https://fake-movie-database-api.herokuapp.com/api?s=[SearchTerm]</div>
+        <table>
+          <tr>
+            <th>Parameter</th>
+            <th>Required</th>
+            <th>Valid options</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>s</td>
+            <td>Yes</td>
+            <td>Two or more characters</td>
+            <td>Movie title (p.s. only Batman and Star Wars exists)</td>
+          </tr>
+        </table>
+
+        <h3>Example</h3>
+        <p>Request:</p>
+        <div class="info-block">https://fake-movie-database-api.herokuapp.com/api?s=batman</div>
+        <p>Response:</p>
+        <div class="info-block">{"Search":[{"imdbID":"tt0096895","Title":"Batman","Year":"1989","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_.jpg"},{"imdbID":"tt0468569","Title":"The Dark Knight","Year":"2008","Poster":"https://ia.media-imdb.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"imdbID":"tt2975590","Title":"Batman v Superman: Dawn of Justice","Year":"2016","Poster":"https://ia.media-imdb.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"imdbID":"tt1345836","Title":"The Dark Knight Rises","Year":"2012","Poster":"https://ia.media-imdb.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"imdbID":"tt0372784","Title":"Batman Begins","Year":"2005","Poster":"https://ia.media-imdb.com/images/M/MV5BYzc4ODgyZmYtMGFkZC00NGQyLWJiMDItMmFmNjJiZjcxYzVmXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"imdbID":"tt4116284","Title":"The LEGO Batman Movie","Year":"2017","Poster":"https://ia.media-imdb.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"imdbID":"tt0112462","Title":"Batman Forever","Year":"1995","Poster":"https://ia.media-imdb.com/images/M/MV5BNWY3M2I0YzItNzA1ZS00MzE3LThlYTEtMTg2YjNiOTYzODQ1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"imdbID":"tt0118688","Title":"Batman & Robin","Year":"1997","Poster":"https://ia.media-imdb.com/images/M/MV5BMGQ5YTM1NmMtYmIxYy00N2VmLWJhZTYtN2EwYTY3MWFhOTczXkEyXkFqcGdeQXVyNTA2NTI0MTY@._V1_UX182_CR0,0,182,268_AL_.jpg"},{"imdbID":"tt0103776","Title":"Batman Returns","Year":"1992","Poster":"https://ia.media-imdb.com/images/M/MV5BOGZmYzVkMmItM2NiOS00MDI3LWI4ZWQtMTg0YWZkODRkMmViXkEyXkFqcGdeQXVyODY0NzcxNw@@._V1_UX182_CR0,0,182,268_AL_.jpg"}]}</div>
+        <p>p.s. google JSON prettify</p>
+      </section>
+
+      <section>
+        <h3>GitHub</h3>
+        The code is on GitHub, check out the <a target="_blank" href="https://github.com/gautemo/fake-movie-database-api">repository</a>. 
+        Feel free to clone the project and make changes. 
+        If you would like to contribute, to improve this demo REST Api or add some more movies, all pull requests are appriciated.
+      </section>
+
+      <section>
+        <h3>Developed by</h3>
+        <h4>Gaute Meek Olsen</h4>
+        <div class="contact-social">
+          <a href="https://play.google.com/store/apps/developer?id=Gaute+Meek+Olsen" target="_blank">
+            <div class="social-circle center-content"><img class="social-image" src="resources/images/play.png" alt="Google Play developer, Gaute Meek Olsen"/></div>
+          </a>
+          <a href="https://twitter.com/GauteMeekOlsen" target="_blank">
+            <div class="social-circle center-content"><img class="social-image" src="resources/images/logo-twitter.svg" alt="Follow Gaute Meek Olsen on Twitter"/></div>
+          </a>
+          <a href="mailto:gautedevelopment@gmail.com">
+            <div class="social-circle center-content"><img class="social-image" src="resources/images/ic_mail_outline_24px.svg" alt="gautedevelopment@gmail.com"/></div>
+          </a>
+        </div>
+      </section>
+
+    </article>
   </body>
 </html>

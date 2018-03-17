@@ -1,0 +1,68 @@
+body{
+    --primary-color: #81d4fa;
+    --primary-color-light:#b6ffff;
+    --primary-color-dark: #4ba3c7;
+    --secondary-color: #ffee58;
+    --secondary-color-light: #ffff8b;
+    --secondary-color-dark: #c9bc1f;
+    width: 50%;
+    margin: 0 auto;
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+}
+
+section{
+    margin: 15px 0;
+}
+
+.info-block{
+    background-color: var(--primary-color);
+    padding: 5px;
+    word-break: break-all;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td{
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+th{
+    background-color: var(--primary-color-dark);
+}
+
+.contact-social{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;    
+}
+
+.social-image{
+    width: 35px;
+    height: 35px;
+}
+
+.social-circle{
+    width: 60px;
+    height: 60px;
+    margin: 0 15px;
+    background-color: var(--secondary-color-light);
+    border-radius: 30px;
+}
+
+.center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
